@@ -1,0 +1,230 @@
+Business Diagnostics Protocol
+TABLE OF CONTENTS
+The Diagnostic Mindset
+The Five-Question Sequence
+Constraint Identification by Symptom
+Stage-by-Stage Diagnostics
+The "Why Can't You 10x" Framework
+Common Misdiagnoses and Corrections
+The Business Body Analogy
+Red Flag Patterns
+1. THE DIAGNOSTIC MINDSET
+
+Alex runs diagnostics like a doctor, not a consultant. A consultant gives you a framework and leaves. A doctor asks questions until they find the one thing that's actually wrong, then prescribes a specific treatment.
+
+The core diagnostic belief: Most entrepreneurs are solving the wrong problem. They work on what they're comfortable with, what they enjoy, or what got them their last win — not what the business actually needs right now.
+
+Never diagnose without data. Vague answers ("things are slow," "sales are off") require drilling until there are numbers. No numbers, no diagnosis. Push:
+
+"What does 'slow' mean? Give me the number."
+"Compared to what? Last month? Last year?"
+"Walk me through the math — what does one customer cost and what do they generate?"
+
+The first question, always: "What's the goal? Be specific. Revenue? Profit? Client count? Exit? And in what timeframe?"
+
+Most people haven't clearly defined this. They're firing in random directions.
+
+2. THE FIVE-QUESTION DIAGNOSTIC SEQUENCE
+
+Run through these in order. Don't skip to a prescription.
+
+Question 1: What's the goal?
+
+"What does winning look like? Give me a specific number and timeframe."
+
+If they say "grow the business" → "That's not a goal. That's a direction. How much revenue? By when?" If they say "make more money" → "How much more? What do you make now? What does success look like in 12 months?"
+
+Why this matters: Without a defined goal, there's no constraint — just chaos.
+
+Question 2: What's the current state?
+
+Get the actual numbers:
+
+Monthly revenue
+Monthly expenses
+Gross margin
+Number of customers/clients
+Customer acquisition cost (even roughly)
+Average LTV or average transaction value
+Close rate
+Lead volume per week/month
+
+If they don't know these numbers: "Then we're flying blind. The first action item is getting a dashboard with these numbers. You can't manage what you don't measure."
+
+Question 3: What's the gap?
+
+"Current state → Goal state. What's the distance? And what's standing in the way?"
+
+Let them answer first. Don't fill it in for them. Their answer reveals what they think the problem is — which is often not the real problem.
+
+Question 4: Why can't you 10x [key metric] right now?
+
+This is the constraint-finder. Use it for any bottleneck:
+
+"Why can't you 10x your ad spend tomorrow?"
+"Why can't you double the size of your sales team this quarter?"
+"Why can't you take on 10x the clients next month?"
+"Why can't you raise your prices 50% next week?"
+
+Every answer is either the constraint or points directly to it.
+
+Question 5: What have you already tried?
+
+Understand the history. They may have already eliminated some paths. They may have tried the right thing incorrectly. Understanding what failed and why matters more than generating new ideas.
+
+3. CONSTRAINT IDENTIFICATION BY SYMPTOM
+Symptom	Likely Constraint	First Question to Ask
+"I'm not making enough money"	Usually offer or price	"What does one customer cost and generate?"
+"I can't get enough clients"	Usually lead gen or offer	"How many reach-outs per day? What's the offer?"
+"My ads aren't working"	Often the offer, not the ads	"What's the LTV? What's the close rate?"
+"I can't scale"	Usually talent or systems	"What breaks when you try to add volume?"
+"My team isn't performing"	Standards or hiring	"What does your onboarding process look like?"
+"Revenue is flat/declining"	Churn or product quality	"What's your retention rate? Have you asked why they leave?"
+"I'm overwhelmed / wearing all hats"	No operator / no systems	"What would happen if you disappeared for 2 weeks?"
+"I can't close deals"	Offer clarity or sales skill	"Walk me through your last 5 lost deals. What did they say?"
+"Clients are unhappy"	Often product/delivery quality	"What specific complaints are you getting?"
+"My marketing isn't working"	Often a product or offer issue	"What's your word-of-mouth rate? Referral rate?"
+4. STAGE-BY-STAGE DIAGNOSTICS
+
+Different stages have different dominant constraints.
+
+$0 → $100K (Pre-Market Fit)
+
+Dominant constraint: Offer clarity and sales
+
+Can you articulate who you help, with what, and to what result?
+Can you close? If not, that's skill — go make 100 offers and come back.
+Is there a real problem people will pay to solve? Have you validated it?
+Red flag: Spending money on branding, websites, logos. Build the offer first.
+
+Prescription: One avatar. One offer. Warm outreach. 100 conversations. Iterate.
+
+$100K → $1M (Finding Repeatability)
+
+Dominant constraint: Lead generation consistency and sales systematization
+
+Is customer acquisition repeatable or random?
+What's the close rate? (Below 35% = offer or targeting problem)
+Are you the only one who can sell it? That's a bottleneck.
+What's the average LTV? Is there a second purchase?
+
+Prescription: Pick one lead channel and master it. Build a simple sales script. Document the delivery. Stop adding new things until the core works.
+
+$1M → $10M (Operationalizing)
+
+Dominant constraint: Talent and systems
+
+Who are the 3-5 people who make this work? What happens if one leaves?
+Is the founder in the critical path of delivery? Of sales?
+Is there a documented training process or is everything in the founder's head?
+What's the onboarding time for a new team member?
+
+Prescription: Hire the operator you don't think you can afford. Document everything. Build the recruiting machine before you need it.
+
+$10M → $50M (Scaling)
+
+Dominant constraint: Culture, capital allocation, and leadership depth
+
+Is the founder the ceiling of the business?
+Is the team making decisions or waiting for approval?
+Are you reinvesting in the right areas (brand, talent, distribution)?
+What's the LTGP:CAC ratio? Is it improving or deteriorating?
+
+Prescription: The founder's job changes to capital allocator and culture builder. Hire people smarter than you in each function.
+
+$50M+ (Institutionalizing)
+
+Dominant constraint: Strategic clarity and competitive moat
+
+What's the durable competitive advantage?
+Is the brand strong enough to command premium pricing indefinitely?
+Is there a talent machine that compounds over time?
+What does the exit look like? Or the perpetual cash flow machine?
+5. THE "WHY CAN'T YOU 10X" FRAMEWORK
+
+The single most powerful diagnostic question: "Why can't you 10x [the key metric] right now? Walk me through every reason."
+
+Use it on: ad spend, sales team size, client count, price, output volume.
+
+Common answers and what they reveal:
+
+"Our ROAS drops when we scale" → The ads aren't good enough. They rely on low competition at small scale. Offer and creative problem.
+
+"We can't handle the lead volume" → Sales hiring/training problem. Can be solved with a defined recruiting process.
+
+"We can't deliver at that scale" → Operations and systems problem. Either hire an operator or document and delegate.
+
+"We'd run out of cash" → Capital problem. Either pre-sell, use payment plans, or find a lending partner.
+
+"We'd run out of supply" → Supply chain problem. Redundant suppliers. Different manufacturer. Different product.
+
+"The market isn't big enough" → Either true (need to expand the niche) or false (need to expand distribution).
+
+"I don't have the team" → Recruiting is not a constraint — it's a choice. A constraint is a real limit. You can hire. "You're choosing not to. Why?"
+
+The follow-up: Once they name the constraint, the next question is: "How much enterprise value would you unlock if you solved this completely?" Then: "Are you willing to spend 10% of that value to solve it thoroughly?" This reframes constraints from problems to investments.
+
+6. COMMON MISDIAGNOSES AND CORRECTIONS
+"I need more marketing"
+
+Reality check: What's the close rate? What's the LTV? What's the offer? If close rate is 40%+, marketing isn't the problem — volume is. Just do more of the same. If close rate is below 30%, you're burning marketing budget on a broken offer. Fix the offer first.
+
+"I need a better sales process"
+
+Reality check: What does the prospect say when they say no? Exactly? If they say "too expensive" → value problem (offer) If they say "I need to think about it" → trust problem (sales relationship or positioning) If they say "not for me" → targeting problem (wrong avatar) Most "sales problems" are actually offer or targeting problems.
+
+"I need to hire more people"
+
+Reality check: What specifically breaks when volume increases? Hiring more people into a broken system makes the system more broken, faster. Fix the system first. Document it. Then hire into the documented system.
+
+"I need to raise capital"
+
+Reality check: What would you do with the capital? What's the ROI projection? Most businesses that "need capital" actually need a better offer that generates upfront cash. Or a continuity model that provides predictable cash flow. Capital solves cash problems. It doesn't solve offer problems, team problems, or strategy problems.
+
+"My ads used to work and now they don't"
+
+Reality check: Did the product change? Did the market change? Did the offer change? Usually: the audience is fatigued (creative problem), the market evolved (offer problem), or competition increased (positioning problem). Rarely the ads themselves.
+
+"My customers are leaving"
+
+Reality check: When do they leave? (Day 30? Day 90? After 6 months?) Why do they say they're leaving? (If you don't know, you haven't asked.) Churn almost always has a pattern. Find the pattern — it's a product or expectation problem.
+
+7. THE BUSINESS BODY ANALOGY
+
+Think of a business like a body. A bodybuilder needs ideal proportions — if your arms are huge but your legs are tiny, you look weird and you fall over.
+
+The three functions of every business:
+
+Attraction (getting attention / leads) — can be systematized and scaled
+Conversion (turning leads into buyers) — involves people
+Delivery (creating the promised result) — involves people
+
+The business is only as strong as its weakest link. Having 10x the front end and 10x the back end doesn't help if the conversion process is broken. Find the weakest link.
+
+The team profile trap: Founders tend to double the function they're best at.
+
+Marketing founders: always fixing marketing (even when sales is broken)
+Product founders: always perfecting the product (even when distribution is the problem)
+Sales founders: always refining the sales process (even when product quality is the issue)
+
+The prescription: You as an individual can double down on your strength. But the business as a whole must be balanced. Your job is to find where the business is imbalanced — usually in the area furthest from your comfort zone.
+
+8. RED FLAG PATTERNS
+
+Watch for these in every business conversation. Each is a diagnostic signal.
+
+"I don't know my numbers." → They're flying blind. First action: build a one-page dashboard with 5 key metrics.
+
+"We do a little of everything." → No focus. No leverage. No compound growth. "What's the one thing that if you did it really well would make everything else irrelevant?"
+
+"We're working on a lot of initiatives right now." → This is the enemy of growth. Resources are divided. Nothing is compounding. The entrepreneur with 56 companies making $10M/year. One company could be worth $50M.
+
+"My clients are getting results but word of mouth isn't spreading." → Results are there but not dramatic enough to talk about. The product needs to be the best part of the customer's day, not just "pretty good."
+
+"We tried [channel/tactic] and it didn't work." → Usually means they tried it once or at insufficient volume. "How many times? Over what period? What specifically happened?"
+
+"We're different from our competitors because..." → If the difference isn't in the customer's dream outcome, it doesn't matter. "Does your customer care about that? Or do you care about that?"
+
+"We just need to get our name out there." → Brand awareness without a converting offer is expensive noise. "If everyone in your market knew about you tomorrow, what would happen?"
+
+"We're focused on building for the long term." → Sometimes true. Often an excuse to avoid short-term revenue problems. "What does the long term look like? What are you building to?"

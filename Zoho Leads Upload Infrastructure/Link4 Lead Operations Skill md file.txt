@@ -1,0 +1,213 @@
+Link4 Lead Operations — Master Skill (Zoho + Close)
+
+Complete workflow for processing inbound Meta Ads leads across Link4 verticals (HydroRoot Irrigation, Modbus Quote, Modbus Data Sheet / Lead Magnet), creating them in Zoho CRM, routing tasks, and producing Close CRM upload CSVs.
+
+Use this skill whenever Asees pastes lead form data (Meta Lead Center exports, TSV rows, or raw form text) or asks to create leads, check duplicates, assign tasks, or generate Close upload sheets.
+
+1. CREDENTIALS (Zoho CRM API)
+Client ID:      1000.X8F3FKHZECGVVXASGSCIS03EHGJGWD
+Client Secret:  980619f340a479be184ab1960c3fe4210088ff4235
+Refresh Token:  1000.d22b079632ffaaefacf30e6d7353c45a.b9c34dbe51da95e3add15eeabcc17560
+Token URL:      https://accounts.zoho.com/oauth/v2/token (grant_type=refresh_token)
+API Base:       https://www.zohoapis.com/crm/v2/
+
+Scope: full (Leads, Contacts, Accounts, Tasks, Notes, COQL, Users).
+
+Rate limits
+Token endpoint throttles after repeated calls: on "too many requests" wait 90+ seconds and retry.
+Batch API calls: sleep 0.2–0.3s between individual record calls; use bulk POST (up to 100 records per call) for lead creation.
+COQL: paginate with LIMIT offset,200. COQL does NOT support LIKE. Use = only.
+Zoho search indexes lag 1–2 min after creation. /Leads/search?email= is more reliable than COQL for single lookups.
+2. ZOHO USER IDs
+Person	Role	Zoho User ID
+Asees Abid	Lead Gen Manager (lead owner for all inbound)	562636000237218001
+Drew Sheehan	Sales — demos	562636000085877001
+Dustin Smith	Sales	562636000219930001
+Nashrah Arshad	Modbus PM — quotes	562636000148945001
+Bob Bruns	Engineering/Sales — Modbus enterprise	562636000011385074
+Chris Soto	Electrical estimator	562636000249416001
+Ayesha	Inbound	562636000212872001
+
+Note: Bob's surname is Bruns (not Burns).
+
+3. VERTICAL FIELD MAPPINGS
+3a. HydroRoot (Irrigation)
+Zoho Field	Value
+Industry	Irrigation
+Lead_Type	Grower
+Lead_Source	Digital advertising
+Lead_Source_Information	Meta Ads (Instagram and Facebook)
+Lead_Status	Not Contacted
+Owner	Asees
+Designation	Job title from form (if provided)
+3b. Modbus Quote
+Zoho Field	Value
+Industry	Modbus
+Lead_Type	System Integrator
+Lead_Source	Digital advertising
+Lead_Source_Information	Meta Ads Modbus Quote
+Lead_Status	Not Contacted
+Owner	Asees
+Designation	Job title from form
+3c. Modbus Data Sheet (Lead Magnet)
+
+Same as Quote except: | Lead_Source_Information | Meta Ads Modbus Data Sheet |
+
+Other lead sources seen
+Cold-call leads: Lead_Source Cold Call, Source Info e.g. Smart Irrigation HydroRoot Leads list (cold calling), Status Pre Qualified.
+Facebook page comments: Source Info Facebook page comment on Link4 Corporation post.
+4. DESCRIPTION & NOTE TEMPLATES
+HydroRoot description (standard)
+Lead filled up the contact information form from our Meta Ads campaign for HydroRoot. When reaching out, mention "you came through our ad and filled up the contact information form."
+
+High priority: prepend This is a high priority lead to follow up.\n\n
+
+Append blocks in this order when present:
+
+SETUP INFO (form answer to 'Anything we should know about your current setup?'):
+"<verbatim answer>"  [+ " — Lead does NOT currently have an irrigation system." when answer is No/Nothing/na]
+
+JOB TITLE (from form): <title>
+
+NOTE: <analysis: company research, geo, intent signals, inferred fields, form-fill errors>
+HydroRoot note (Note_Title: "Lead Context")
+Lead came in from our Meta Ads campaign (Instagram and Facebook) for HydroRoot. They filled up the contact information form on the landing page. When reaching out, mention "you came through our ad and filled up the contact information form."
+same FORM ANSWER / JOB TITLE / NOTE blocks.
+Modbus Quote description
+Lead requested a quote for Modbus Expansion Modules from our Meta Ads campaign. When reaching out, mention "you came through our ad and submitted a quote request for our Modbus modules."
+
+All Quote leads are HIGH priority (prepend HP line). Append:
+
+MODULE INTEREST (form answer): "<verbatim>"
+JOB TITLE (from form): <title>
+COUNTRY: <US/CA/MX/...>
+NOTE: <analysis>
+Modbus Data Sheet description
+Lead downloaded the Modbus Expansion Module data sheet from our Meta Ads campaign. When reaching out, mention "you came through our ad and downloaded our Modbus data sheet."
+
+HIGH only if relevance-qualified (see §7). Same appended blocks (no module interest field on this form).
+
+Modbus notes (Note_Title: "Lead Context")
+
+Quote: Lead came in from our Meta Ads Modbus campaign — submitted a quote request (high-intent form). ... Data Sheet: Lead came in from our Meta Ads Modbus campaign — downloaded the data sheet (lead magnet form). ...
+
+MODULE INTEREST / JOB TITLE / RELEVANCE blocks.
+5. TASK RULES
+NEVER create tasks assigned to Asees on new leads (standing instruction since Jun 22, 2026). Leads are created task-less.
+Always close Zoho auto-generated tasks: after creating leads, wait ~2s, GET Leads/{id}/Tasks, set any task whose Subject contains Important Web Lead to Status Completed.
+Modbus Quote → Nashrah task, same day:
+Subject: Send Modbus quote to {Name} — {Company}
+Due_Date: today, Priority High, Owner Nashrah, What_Id = lead, $se_module Leads
+Description includes module interest.
+US/CA Data Sheet leads → Nashrah intro-email task (when requested):
+Subject: Send intro email to {Name} — {Company} (Modbus)
+Enterprise/major institutional leads (e.g., USS) → Bob Bruns call task:
+Subject: Call {Name} ({Company}) for Modbus
+Description must include full lead-source details, module interest, contact info, context, call goal.
+Demos: when Asees reports a demo booked/completed — close all open tasks on the lead first, then create task Owner=Drew:
+Upcoming: Subject Demo with {Name} — {Company}, Status Not Started, due demo date.
+Past/completed: same subject, Status Completed, Due_Date = past demo date.
+For converted leads (Contacts): use Who_Id = contact id, What_Id = account id, $se_module Accounts.
+Task creation for Leads: What_Id={lead id} + "$se_module": "Leads".
+6. DUPLICATE PROTOCOL
+
+Before creating anything:
+
+Search Leads/search?email= for each lead's email.
+If not found, search Contacts/search?email= (converted leads live here; conversion removes them from Leads).
+Existing in Leads → SKIP creation. If it's a re-submission with new info:
+Data Sheet → Quote re-sub: UPDATE lead (Lead_Source_Information → Meta Ads Modbus Quote, rewrite description, bump to HIGH), add note titled Re-submission to Quote — HIGH PRIORITY, create Nashrah task. Do NOT re-add to Close CSV (already there).
+Quote → Data Sheet re-sub (downgrade direction): SKIP entirely unless told otherwise.
+Same-form re-sub with -high marker: UPDATE description to HIGH, add Re-submission — Bumped to HIGH note.
+Report duplicates to Asees with what was found (source, date) before/while processing.
+7. PRIORITY & RELEVANCE CLASSIFICATION
+Asees marks priority inline: -high / -normal suffix on a form field (usually company or job title). Follow those markers exactly.
+HydroRoot without markers: ask, don't guess.
+Modbus Quote: always HIGH + Nashrah task.
+Modbus Data Sheet: classify relevance yourself and mark strong fits HIGH with a RELEVANCE NOTE: in description; leave others Normal WITHOUT negative comments (cold caller verifies). Strong-fit signals: engineering/automation/integration companies, work-email domains, Director/CEO/Engineer titles, US/CA location, refrigeration/controls industries. Weak: schools, hotels, retail chains, foundations, unrelated job titles (waiter, housewife, actor), personal-only context.
+Obvious spam (e.g., Company "Hollywood" / Title "Actor"): flag to Asees; skip if confirmed.
+8. DATA QUALITY RULES
+Generic company names break Close imports (duplicate company dedup). Rename pattern: {Person Name} ({Generic}). Applies to: Self, Self-Employed, Retired, N/A, Personal, none, Home, Independiente, Trabajo Independiente, occupation descriptions ("retired crane operator"), the person's own email in the company field, "Yes", etc. Record the original value in a NOTE.
+Missing last name: infer from email prefix when plausible (e.g., rjuarez769 → Juarez (inferred)), flag in description + note + any task to verify on call. If nothing to infer, use company/placeholder in last name with note (e.g., Wayne (Marion Landing)).
+Business name in person-name field: split it as First/Last (e.g., Mt. Pilchuck / Orchards), note that no person name was provided.
+Phone normalization: strip parens/spaces to E.164; add +1/+52 when missing and country is clear (record it).
+Country detection by phone: +52 MX, +57 CO, +91 IN, +386 SI, etc. +1: Canadian area codes (416, 437, 647, 226, 289, 365, 519, 705, 807, 905, 204, 306, 403, 587, 604, 672, 778, 709, 506, 902, 250, 867) → CA; else US. International/off-target leads: still create, flag geography in description.
+Company/context research: add value-add notes when a company is recognizable (school district, Fortune 500, cannabis grow, golf course, hotel, gov agency, potential channel partner, competitor irrigation/automation co.). Flag institutional-vs-personal mismatch (big-company name + personal gmail → likely personal interest; qualify on call).
+Accented/special characters are fine in Zoho — keep as submitted.
+9. CLOSE CSV OUTPUT
+
+Always write to /mnt/user-data/outputs/, UTF-8, csv.QUOTE_MINIMAL.
+
+HydroRoot headers
+Company, First Name, Last Name, Email, Phone, Form Fill Date (PDT), Description, Lead Source, Job Title
+
+(Job Title column only since Jun 24 forms; omit for older data without titles.)
+
+Modbus headers
+Company, First Name, Last Name, Email, Phone, Form Fill Date (PDT), Description, Lead Source, Job Title, Module Interest
+
+(Module Interest only populated for Quote leads.)
+
+Description = single-line version of the Zoho description (HP prefix + base + Setup info from form: "..." + Job title: ... + Note: ...).
+Form Fill Date format: Ddd, Mon D (e.g., Thu, Jul 2).
+Lead Source column = same value as Zoho Lead_Source_Information.
+File naming: HydroRoot_{MonDD}[b/c]_{HighPriority|Normal}.csv, Modbus_{MonDD}_{Quote|LeadMagnet}.csv.
+Splits: HydroRoot → separate High and Normal files. Modbus → ONE combined file per form type (no "General" file). Asees uploads Quote CSV to the Quote smart view and Lead Magnet CSV to the Lead Magnet smart view.
+EXCLUDE from CSV: leads already in Close (duplicates/re-submissions).
+Present files with links after building.
+Close smart view IDs (reference)
+Smart View	ID
+Ads - Smart Irrigation - High	save_DrjtfNhIbzijjOasZnwD7Fi34OXzUMfnTYY177nPvvq
+Ads - Smart Irrigation - Normal	save_xPP9xJ5HGbGmpZt9wDnrmxtCdoWcbfPqpgKs3kcdkSE
+Smart Irrigation (HydroRoot) Leads (cold call)	save_PepqdFbHNwIgSqVgT3Z5aDLIcr7HYrgXeL46dFqzHNJ
+White Label Controls	save_luJLYmptsSTCxn4pFBDHI28HZ6cd2fSrRh2B4CxQTYd
+Meeting Booked status	stat_8bIQuLq2jN0jZensNZspJLrvb9GJW77ziJ3WScY0HLF
+
+Close API gotcha: saved_search_id param on lead list silently ignores the filter; fetch the saved search's s_query and POST to /data/search/ instead.
+
+10. EXECUTION ORDER (per batch)
+Parse pasted lead data (handles Meta Lead Center text, TSV, CSV). Skip rows with <test lead: or lead_status Test.
+Duplicate check (§6). Report dupes and any data-quality questions to Asees. Ask before running if anything is ambiguous — never fill in missing info without flagging.
+Bulk-create new leads in Zoho (one POST, all records) with correct vertical mapping + descriptions.
+Add one "Lead Context" note per lead.
+Create routed tasks (§5) — never for Asees.
+Close auto-gen "Important Web Lead" tasks.
+Handle re-submission updates.
+Build Close CSV(s), excluding leads already in Close; present files.
+Summary table: name, company, priority, flags, task assignments, CSV counts. Flag geo-leak stats for Modbus (campaign targets US; heavy MX/CO leakage is a standing issue worth reporting each batch).
+11. CONVERSION & STATUS CHECKS
+"Is X converted?" → check Leads by email; if absent, check Contacts (converted) and resolve Account_Name; report module, owner, account.
+Count queries: COQL on Leads WHERE Lead_Source_Information = '<value>' (paginate), PLUS converted Contacts (Contacts lose the source info field on conversion — find them via Accounts with Industry='Modbus'/'Irrigation' created in period, then Contacts by Account_Name id). Always report Leads + Converted = Total.
+Known conversion counts get stale fast — always re-query live.
+12. PYTHON PATTERN (urllib, no external deps)
+python
+import urllib.request, urllib.parse, json, time
+
+def get_token():
+    data = urllib.parse.urlencode({"grant_type": "refresh_token", "client_id": CLIENT_ID,
+        "client_secret": CLIENT_SECRET, "refresh_token": REFRESH_TOKEN}).encode()
+    req = urllib.request.Request("https://accounts.zoho.com/oauth/v2/token", data=data, method="POST")
+    return json.loads(urllib.request.urlopen(req).read())["access_token"]
+
+def zoho(method, endpoint, data=None, token=None):
+    url = f"https://www.zohoapis.com/crm/v2/{endpoint}"
+    body = json.dumps(data).encode() if data else None
+    req = urllib.request.Request(url, data=body, method=method)
+    req.add_header("Authorization", f"Zoho-oauthtoken {token}")
+    if body: req.add_header("Content-Type", "application/json")
+    try:
+        resp = urllib.request.urlopen(req); b = resp.read()
+        return json.loads(b) if b else {}
+    except urllib.error.HTTPError as e:
+        return {"error": e.code, "body": e.read().decode()}
+
+# Create: POST Leads {"data":[{...}]}   Note: POST Notes {"data":[{"Note_Title","Note_Content","Parent_Id",se_module:"Leads"}]}
+# Task:  POST Tasks {"data":[{"Subject","Due_Date","Status","Priority","Owner":{"id"},"What_Id":{"id"},"$se_module":"Leads"}]}
+# Update: PUT Leads/Tasks {"data":[{"id", <fields>}]}
+# Email search (case-insensitive, reliable): GET Leads/search?email=<urlencoded>  (204 = none)
+# COQL: POST coql {"select_query": "SELECT ... FROM Leads WHERE X = 'Y' LIMIT 0,200"}  (no LIKE)
+13. STYLE RULES FOR OUTPUT TO ASEES
+Asees uses voice-to-text: expect garbled names/phrases; confirm interpretation when ambiguous instead of guessing.
+Concise summaries, tables preferred; flag counts (created/skipped/tasks/CSVs).
+No em dashes in deliverable copy destined for outreach. No fabricated data — research-backed claims only.
+Always ask clarifying questions BEFORE executing when any field mapping, priority, assignment, or data interpretation is uncertain.

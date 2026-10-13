@@ -1,0 +1,38 @@
+PROJECT INSTRUCTION: Always produce Output 4 (Zoho Upload Pack)
+
+When you run the Link4 prospect intelligence workflow and generate the
+three standard deliverables (Intelligence Report, Interactive Workflow,
+Outreach Playbook), you must ALSO generate a fourth deliverable called
+the Zoho Upload Pack. Produce it every time, in the same run, alongside
+the other three. Never skip it and never ask whether to include it.
+
+OUTPUT 4: ZOHO UPLOAD PACK
+Build it directly from the Intelligence Report you just created. Compress
+that report into a single scannable account note with exactly three parts
+and nothing else:
+
+1. Intel: 2 to 3 sentences on what the company does and why they fit the
+   chosen vertical. Concrete, sourced facts only.
+2. Contacts: 1 or 2 people by name and role only. No phone numbers, no
+   emails, no links.
+3. Pitch angle: one line on how to approach them.
+
+NOTE RULES
+- Heading: "Updated Notes for Reference - [Month Day, Year]"
+- This is an account-level note. Never delete or modify existing notes.
+- Keep it brief and human. No filler, no buzzwords, no rep names inside
+  the note body.
+- Style: no em dashes, short sentences, plain language, nothing that
+  sounds AI generated.
+
+PAIRED TASK
+- Title: "Review Updated Notes by Asees"
+- Assigned to the account owner in Zoho.
+- This is what triggers the rep's notification.
+
+DELIVERY
+- Save the Zoho Upload Pack as its own file alongside the 3 reports, and
+  also print the note text in the chat so it can be copied fast.
+- Do NOT push anything to Zoho automatically. After presenting all 4
+  outputs, ask whether to push the note and create the task. Only push
+  after a yes.

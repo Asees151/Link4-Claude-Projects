@@ -1,0 +1,376 @@
+Offer Building Frameworks
+TABLE OF CONTENTS
+Commodity vs. Grand Slam Offer
+Grand Slam Offer — Construction Process
+The Value Stack & Bonus Framework
+Guarantee Types
+Scarcity & Urgency
+The M.A.G.I.C. Naming Formula
+The Money Model Sequence (4 Offer Types)
+Niche Selection Framework
+Offer Audit Checklist
+1. COMMODITY VS. GRAND SLAM OFFER
+
+A commodity is a product available from many places, bought based on price rather than value. When a prospect thinks "these are pretty much the same, I'll take the cheaper one" — you're a commodity. The trap: look at the market, take the average, go slightly below to be "competitive." Everyone doing this is broke.
+
+A Grand Slam Offer makes comparison impossible. It puts you in a category of one. The prospect can't evaluate you against competitors — they can only evaluate you against nothing. "Your Grand Slam Offer establishes you as your own category."
+
+The proof: Same $10,000 in ad spend.
+
+Commoditized offer: $5,000 revenue
+Grand Slam Offer: $112,000 revenue
+Same eyeballs. Same spend. 22x the revenue.
+
+The same fulfillment. Different packaging, positioning, naming, guaranteeing, and stacking.
+
+How Hormozi transformed his agency offer: Before: $1,000 upfront + $1,000/month (clients took 3 months to break even) After: "Pay one time. No recurring fee. Cover your own ad spend. I'll generate leads and work them for you. Only pay me if people show up. I guarantee 20 people in your first month or your next month free." Result: Clients went from 3-month breakeven to 12x acquisition spend each month.
+
+2. GRAND SLAM OFFER — CONSTRUCTION PROCESS
+Step 1: Define the Dream Outcome
+
+Not what you sell — what the customer experiences at the destination. "No one wants a gym membership. They want to be the person who looks like they go to the gym."
+
+Ask: What are they actually trying to achieve? What does their life look like after? Frame in terms of status: how will others perceive them? What will they be able to do, say, or show?
+
+Step 2: List Every Problem & Obstacle
+
+Write down everything that stands between the prospect and their dream outcome. Think about: What happens immediately before they use your product? During? After? What's the "next" problem that shows up once the first is solved?
+
+For each problem, identify all four negative dimensions:
+
+Makes it hard to achieve the dream outcome
+Reduces perceived likelihood of success
+Increases time delay
+Increases effort/sacrifice required
+
+The more problems you identify, the more problems you get to solve — and the more value you stack.
+
+Step 3: Transform Problems Into Solutions
+
+Reverse each problem: add "how to" and flip it. "Buying healthy food is hard and confusing" → "How to make buying healthy food easy and automatic"
+
+Then give each solution a compelling name with the benefit built in: "The Foolproof Bargain Grocery System — saves $300/month and takes less time than your current routine"
+
+Step 4: Choose Delivery Vehicles (The Delivery Cube)
+
+For each solution, brainstorm across 6 dimensions:
+
+Attention level: 1-on-1 / small group / 1-to-many
+Effort level: DIY / done-with-you / done-for-you
+Support medium: in-person / phone / email / text / Zoom / async
+Consumption format: audio / video / written / live
+Speed: 24/7 / workday hours / specific schedule
+Scale test: What would you provide if they paid 10x? What if 1/10th?
+Step 5: Trim and Stack
+
+Trim: Rate each solution on cost-to-business vs. value-to-customer.
+
+Remove: high cost, low value (first)
+Remove: low cost, low value
+Keep: low cost, HIGH value (gold — this is where you stack heavily)
+Keep: high cost, high value (only if essential to delivering the dream)
+
+Prioritize 1-to-many delivery mechanisms: "High one-time creation cost, infinitely low additional effort after. This is why software becomes so valuable."
+
+Stack: Combine remaining items into a bundle that solves every perceived problem. "Don't get romantic about how you want to solve the problem. Find a way to solve every problem a prospect presents with."
+
+3. THE VALUE STACK & BONUS FRAMEWORK
+
+Core insight: A single offer is less valuable than the same offer broken into named component parts and stacked as bonuses. The same product presented as individual named bonuses is perceived as dramatically more valuable.
+
+The infomercial principle: "This knife costs $37" < "This knife costs $37, and you also get these 10 additional knives... for free!" The knife is still $37. But the perception is completely different.
+
+How the stack works: Price is anchored to the core offer. Each bonus widens the gap between price and value until the rubber band snaps and they have to buy.
+
+11 Bonus Rules
+Always offer bonuses
+Give each a unique name with the benefit in the title
+Explain: what is it, how you discovered it, how it solves their specific problem
+Prove value with stats, cases, or anecdotes
+Paint a vivid picture of their life with the bonus in play
+Assign a specific dollar value to each and justify it
+Tools and checklists outperform more training (lower effort = higher perceived value)
+Each bonus should address a specific obstacle in the buying decision
+Bonuses can solve the next problem before they even encounter it
+Total bonus value stack should eclipse the core offer price
+Add scarcity and urgency to individual bonuses
+Selling Sequence (1-on-1)
+Present core offer, ask for the sale
+If YES: reveal bonuses after purchase — creates a "wow" experience
+If NO: present a bonus that directly addresses their specific objection, re-ask
+Never discount the main offer. The script: "Totally understand. Here's what I can do — I'll add [bonus addressing their concern]. Does that make it fair enough to move forward?"
+Using Other People's Products as Bonuses
+
+Negotiate with complementary businesses to provide their products/services as bonuses in exchange for exposure to your clients. Cost to you: zero. Value to prospect: high.
+
+4. GUARANTEE TYPES
+
+Core principle: Risk reversal is the #1 way to increase offer conversion. Changing the guarantee quality alone can increase conversion rates 2-4x.
+
+The power formula: "If you do not get [X result] in [Y time period], we will [Z]."
+
+Type 1: Unconditional Guarantees
+
+No conditions attached.
+
+No-questions-asked refund: Strongest, highest risk. Best for low-ticket B2C — most people won't bother claiming it, but the guarantee increases sales dramatically.
+Satisfaction guarantee: "If you're not completely satisfied for any reason..."
+Type 2: Conditional Guarantees
+
+Include specific terms. Get creative here — these are the most powerful.
+
+Service guarantee (Hormozi's favorite): "We will continue working for you free of charge until you achieve [result]." Removes risk without risking cash — only costs your time.
+
+Outsized refund: Return more than they paid. "If it doesn't work, I'll refund your investment AND give you an additional $X for your trouble."
+
+Credit-based: Return value as credit toward their next purchase.
+
+Hotel & airfare: "If it doesn't work, we'll reimburse your travel costs."
+
+Wage payment: "If you don't get the result, we'll pay you your hourly rate for time spent."
+
+Release of service: "If it doesn't work, we'll release you from your contract."
+
+Delayed second payment: "Only pay the second half if you get the result."
+
+First-outcome guarantee: "Don't pay anything until you achieve [first milestone]."
+
+Type 3: Anti-Guarantee
+
+"All sales are final." Must come with a powerful reason why. "If you're the type of person who needs a guarantee to make this decision, you're not the type of client we work with." Use only when: the product can't be un-seen, or when selectivity is a brand feature.
+
+Type 4: Implied (Performance-Based)
+
+"If I don't perform, I don't get paid." Strongest form of risk reversal.
+
+Pay per result/milestone
+Revenue share
+Profit share
+Ratchet (pay X% above a threshold, keep a % of upside)
+Stacking Guarantees
+
+Like bonuses, stack multiple guarantees: "30-day unconditional refund AND if you complete all the work and still don't get [result] by 90 days, we'll refund triple your investment."
+
+Name your guarantee. Not "satisfaction guarantee." Instead: "The Double-Down Guarantee: if you don't get [X] in [Y] days, we don't just refund you — we pay you back twice what you invested."
+
+5. SCARCITY & URGENCY
+
+The foundation: Fear of loss is stronger than desire for gain. People want what they can't have. What's rare is perceived as valuable.
+
+Critical rule: Scarcity and urgency must be REAL. Made-up limits are detectable and destroy trust. The most ethical approach is honesty: "We're 81% to capacity — only 19 spots remain."
+
+Scarcity = limited quantity. Urgency = limited time.
+
+Three Types of Scarcity
+
+Limited supply of seats/slots:
+
+Total business cap: "We only work with 20 clients at this level"
+Growth rate cap: "Only accepting 5 new clients per week; 3 spots already taken"
+Cohort cap: "This class is limited to 12 people"
+Never-available-again: "If you leave, you can't come back at this rate"
+
+Limited supply of bonuses: "The first 10 people to join get [specific bonus] — after that it's gone."
+
+Extreme scarcity: "I'm opening 3 spots for 1-on-1 work at $X." Small number. Very high price. "You will make more money than you thought possible."
+
+Four Types of Urgency
+
+Rolling cohort: "If you join today, I can get you into the group starting Monday. Otherwise you'll wait until the next cohort." Real deadline, real consequence.
+
+Rolling seasonal: Use real seasons and events. Name the promotion after the season. "Summer Sprint" vs. "Fall Accelerator" — same offer, new wrapper, new deadline.
+
+Price-based: "I'm raising prices on [date]. If you want the current rate, now is the time." Never raise prices without announcing. Influx of cash from fence-sitters + positions strength.
+
+Exploding opportunity: Each day they wait, something decreases. Bonus value, slots available, or price goes up. "50-60% of sales on a week-long campaign happen in the last 4 hours of the last day." Deadlines aren't just nice — they're essential.
+
+6. THE M.A.G.I.C. NAMING FORMULA
+
+Offers fatigue. Naming re-stimulates demand without changing the underlying offer. "You are only changing the wrapping paper."
+
+M — Magnetic Reason Why Why are you making this offer? Free, 88% off, Grand Opening, Anniversary, New Year, etc.
+
+A — Announce Your Avatar Call out the specific person. "Bee Cave Dentists." "Rolling Hills Moms." "Brooklyn Busy Executives." The more specific and local, the higher the conversion.
+
+G — Give Them a Goal The dream outcome in a phrase. "Pain Free." "Six Pack." "Double Your Revenue." "$10K in 30 Days."
+
+I — Indicate a Time Interval 4 Hour. 21 Day. 6 Week. 12 Month.
+
+C — Complete with a Container Word A bundle word: Challenge, Blueprint, Bootcamp, Masterclass, Accelerator, Sprint, System, Transformation, Deep Dive, Hack, Revolution, Reset, Academy.
+
+Example transformation: "Float Tank Session" → "Free 6-Week Stress Release Challenge for Rolling Hills Busy Moms" Same service. Dramatically different response rate.
+
+Additional rules:
+
+Use 3-5 MAGIC components (not all 5 every time)
+Apply MAGIC to sub-items and bonuses too
+Rhyming and alliteration stick in the mind
+Name every deliverable in the stack with the benefit built into the name
+When Offers Fatigue, Refresh In This Order:
+Change the creative (images, photos)
+Change the body copy
+Change the headline/wrapper
+Change the duration
+Change the enhancer (free/discount)
+Change the monetization structure and price points
+7. THE MONEY MODEL SEQUENCE (4 OFFER TYPES)
+
+Core concept: A money model is a deliberate sequence of offers. The goal is to make enough from one customer to acquire and service at least two more. This creates compounding growth.
+
+The math: If you make 2x per customer AND get them 2x as fast → business grows 8x. Triple it and you grow 27x. The sequence is everything.
+
+Three stages:
+
+Get cash (attraction offers → more customers for less)
+Get more cash (upsells/downsells → more per customer)
+Get the most cash (continuity → long-term revenue)
+Stage 1: Attraction Offers (Turn strangers into customers)
+
+Goal: Generate leads, make the first sale, ideally cover cost of acquisition.
+
+Win Your Money Back: Client pays $600 for 6-week challenge. If they lose 10lbs, they win their money back as cash or store credit toward the next (more expensive) thing. Those who win back their money almost always use the credit — because they now believe in you.
+
+Giveaway/Scholarship: Offer full-ride scholarship to your program. People apply with contact info. One winner gets it free. Non-winners get offered a partial scholarship (discount). You built a list of warm, self-qualified leads.
+
+Decoy Offer: $5 for a 5-day pass. When they show up, you reveal that achieving their stated goal requires more than 5 sessions, so credit their $5 toward the real, premium offer. Advertises one thing; reveals a better thing when they arrive.
+
+Buy X Get Y Free: Instead of $100/month, sell 6 months at $600 and get 12 months free. Same total price. But you get cash upfront, client commits longer, "free" is more compelling.
+
+Pay Less Now / Pay More Later: Two options: $0 down, $500 after you finish (full price) OR $299 now + recordings + coaching call + printed materials (bonuses). Makes the paid option feel like the deal because of all the extras added to justify the upfront payment.
+
+Stage 2: Upsell Offers (Make more money faster)
+
+Goal: Increase revenue per customer immediately after they buy.
+
+Classic Upsell: Solve the next problem as soon as they buy. Bike → helmet → lights → puncture-resistant tires → 2-year insurance. $299 sale becomes $525. Upsells have much higher margin than the core product.
+
+Menu Upsell (A/B): Don't ask if they want something — ask which one. "Does your dog prefer beef or chicken flavor?" Not "do you want this?" They're already deciding which flavor, not whether to buy. Works on payment methods too: "Same card?"
+
+Unselling Upsell: Remove what they don't need, then sell only what they do. "You don't have arthritis, right? We can cross that off. You're not pregnant? Cross that off. Actually, you only need these two things. Want to schedule before or after work?" They feel cared for because you didn't try to sell everything.
+
+Prescription Upsell: Tell them what they need like a doctor. Don't ask — prescribe. "On top of his food, give him one of these joint chews daily. Every 90 days, one of these heartworm wafers. Let's book your follow-up right now." Already assumed they're doing it.
+
+Anchor Upsell: Show premium first ($16,000 suit). Then show acceptable alternative ($2,200). $2,200 feels cheap after $16,000. "The only thing worse than making a $1,000 offer to someone with a $100 budget is making a $100 offer to someone with a $1,000 budget."
+
+Rollover Upsell: Convert one-time wins into continuity. Win your money back → "Credit your $600 toward a yearly membership at $150/month instead of $200. You won it — you might as well invest it in yourself." Winners are most likely to stay. Also works for re-engaging old clients and recovering upset clients.
+
+Stage 3: Downsell Offers (Make money even on 'no')
+
+Goal: Any offer after someone says no. Never leave money on the table.
+
+Change HOW they pay first, before changing WHAT they get.
+
+Payment Plan Downsell:
+
+Reward full pay with bonuses (re-frame it as upside, not penalty)
+Encourage 3rd-party financing (they pay full, get bonuses; you get full cash)
+Half now, half later
+Three equal payments
+Verify they actually want it — if yes, it's a money problem, not a value problem
+
+Trial with Penalty Downsell: "Start free for 14 days, but you must attend all onboarding calls, post progress twice a week, attend feedback sessions. We charge at day 14. Miss any of it, you get a small penalty fee to keep you on track." Gets fence-sitters committed.
+
+Feature Downsell (change WHAT they get): Remove value, reduce price — but do it in a way that makes the full offer seem like the better deal.
+
+Lower quantity (3-month supply → 1-month)
+Lower quality (24/7 support → 9-5 support)
+Remove features (guarantee, done-for-you, personal access)
+Remove entire service tiers
+Stage 4: Continuity Offers (Keep people buying long-term)
+
+Goal: Recurring revenue. Transform one-time buyers into long-term customers.
+
+The core challenge: Memberships aren't naturally attractive. Nobody wants to commit to something they haven't tried.
+
+Continuity with Bonuses: Make the membership's bonuses worth more than the first payment. Gym example: "Join as a member and the 6-week challenge is free. Plus you get: better class times, tanning, towel service, smoothie bar, VIP events." The bonus stack makes the commitment feel like a no-brainer.
+
+Discount Continuity:
+
+Add free time at the END (not beginning): "12 months of payments = 3 months free" Discourages cancellation because they lose the free period
+Spread the discount over time: $200/month → $150/month if they stay active
+Keep the discount for life if all payments are on time
+
+Waived Fee: Large setup fee ($1,000-$5,000) that gets waived if they commit to a year. "Pay the fee and go month-to-month, or commit to a year and I'll waive it. Leave early and the fee kicks back in." Most people commit. Those who do are highly engaged clients.
+
+8. NICHE SELECTION FRAMEWORK
+The Starving Crowd
+
+"If you had a hot dog stand and could only have one advantage over competitors, what would it be?" The answer: A starving crowd. Market > Offer > Persuasion. In order of importance, always.
+
+Four Market Criteria
+Massive Pain — Not "want" — desperate need. The degree of pain = the price you can charge. "The pain is the pitch." If you can articulate their pain better than they can, they almost always buy.
+Purchasing Power — They must have money or access to money. Career coaching for unemployed = bad market. Consulting for established businesses = good market.
+Easy to Target — Associations they belong to, mailing lists, groups, channels they all watch. If you can't find them, you can't sell to them.
+Growing — Growing markets are tailwinds. Shrinking markets are headwinds. Everything harder.
+The Three Eternal Markets
+
+Health. Wealth. Relationships. These will always exist because pain is acute when you lack them. Find a sub-niche within one of these buckets.
+
+Why Niching Works
+
+The more specific the niche, the rarer the solution, the higher the price. "Time Management" = $19. "Time Management for B2B Outbound Power Tools Sales Reps" = $2,000. Same core content. Different specificity. Up to 100x price difference.
+
+"The riches are in the niches. Under $10M/year, niching down will almost always make you more money."
+
+The niche formula: "I solve [problem type] for [specific person] in [unique way] that reverses [their deepest fear]."
+
+"Niche slap": Once you pick, commit. All markets have problems. The grass is never greener. Stick long enough to have trial and error. Switching is the failure mode.
+
+9. OFFER AUDIT CHECKLIST
+
+Use this to diagnose an existing offer or build a new one from scratch.
+
+Dream Outcome
+
+ Can you articulate the outcome in one sentence from the customer's perspective?
+ Is it framed as a destination, not a vehicle?
+ Does it connect to a status upgrade?
+
+Perceived Likelihood of Achievement
+
+ What social proof exists? Is it specific and credible?
+ Is there a guarantee? How strong?
+ How is your methodology differentiated from alternatives?
+
+Time Delay
+
+ What's the first quick win a client gets (within 7 days)?
+ How is time-to-result communicated in the offer?
+ Is there a way to compress the perceived or actual time to result?
+
+Effort & Sacrifice
+
+ How much does the client have to do? Can it be reduced?
+ What's done-for-them vs. done-with-them vs. DIY?
+ What are all the friction points in delivery that can be removed?
+
+Value Stack
+
+ Is the core offer broken into named components?
+ Does each component have a clear dollar value assigned?
+ Do the bonuses address specific objections?
+ Does total stack value dwarf the price?
+
+Guarantee
+
+ Is there a guarantee? What type?
+ Is it named compellingly?
+ Could it be stronger?
+
+Scarcity & Urgency
+
+ Is there a real limit on availability?
+ Is there a real deadline?
+ Are both communicated clearly and honestly?
+
+Pricing
+
+ What's the close rate? (Target: 35-40%)
+ Are you charging based on value or cost?
+ What does 10x the current price feel like? Could you deliver it?
+
+Naming
+
+ Does the name contain a benefit?
+ Could you apply the MAGIC formula?
+ Could you give each bonus a benefit-driven name?

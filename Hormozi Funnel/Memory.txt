@@ -1,0 +1,54 @@
+Purpose & context
+
+Asees works in marketing at Link4 (also referenced as Link4 Controls and White Label Controls), a company that sells white-label cloud-connected controllers to industrial OEM manufacturers. The CEO is Yen Pham. Link4 operates across at least two verticals:
+
+Cold/hot storage (primary focus): White-label environmental controllers branded as "Pearl," targeting refrigeration equipment OEMs (walk-in coolers, blast freezers, chillers) in the $10–100M revenue range who lack in-house controls engineering. Primary conversion goal is booked demos.
+Irrigation: Cloud-connected irrigation controllers targeting nursery operators, branded under "Link4 Irrigation" (linkforirrigation.com domain).
+
+Link4 is early-stage with no existing customers at the time of outreach, making credibility-building a central challenge across all campaigns.
+
+Current state
+
+Pearl (cold/hot storage) campaign:
+
+A 10-step drip email sequence plus breakup email has been developed and refined, organized into Top of Funnel, Middle of Funnel, and Bottom of Funnel stages
+Key assets in development: Regulatory Map PDF (top of funnel), Profit Uplift Calculator (bottom of funnel), CEO letter from Yen, Pearl explainer video
+The Profit Uplift Calculator captures three OEM profit streams: unit price uplift from smart connectivity, recurring monthly monitoring markup revenue, and repair cost savings from predictive alerts
+Link4's commercial model: charges OEMs a per-unit monthly cloud subscription; OEMs mark this up when reselling monitoring services to end customers, keeping the margin
+
+Irrigation campaign:
+
+Three active cold email campaigns (Water Cost, Irrigation Time, Plant Loss), each running three-email sequences
+Previously identified issues: one campaign with high bounce rates (flagged for pause), broken open tracking in one campaign, zero non-OOO replies across ~1,200 sends
+All nine emails were rewritten with tighter CTAs, numerical hooks, binary offers, and curiosity-loop P.S. lines
+A potential case study contact (a nursery operator) exists but labor cost details hadn't been confirmed before adding to copy
+
+On the horizon
+
+Confirming real labor cost data from the nursery case study before incorporating into irrigation messaging
+Lead list segmentation for the industrial OEM campaign: separating manufacturers from service providers and system integrators, and narrowing to a single product vertical (pumps, HVAC, or refrigeration)
+Continued development and potential deployment of the Profit Uplift Calculator as a bottom-of-funnel asset
+
+Key learnings & principles
+
+List quality precedes copy quality: Mismatched lead lists (mixing manufacturers, integrators, and service providers) undermine campaigns regardless of copy strength; segmentation must come before any rewrite
+No customers = no proof → use substitutes: Without case studies, campaigns need credibility alternatives: pilot/risk-reversal offers, founder credentials, specific industry language, demo videos
+Self-referential CTAs outperform broadcaster CTAs: Prompting prospects to calculate their own pain (vs. reading about someone else's results) drives stronger engagement
+OEM service economics are real: Commercial refrigeration OEMs carry genuine warranty repair costs and aftermarket service revenue — Pearl's predictive alert value proposition is commercially grounded
+Single vertical focus: Spreading messaging across pump, HVAC, and refrigeration simultaneously dilutes relevance; picking one vertical first is the right sequencing
+
+Approach & patterns
+
+Asees communicates frequently via voice-to-text, resulting in fragmented phrasing; prefers Claude to interpret intent and confirm before proceeding
+Strong preference for extremely simple language: short sentences, no em dashes, third-grade reading level
+Preferred format: one-liner description → bullet list of inputs/outputs → two-sentence outcome statement
+Favors scannable bullets and outcome framing over dense paragraphs or tables
+Iterates through multiple document versions with incremental refinement rather than wholesale rewrites
+Asks clarifying definitional questions when terminology is unfamiliar (e.g., TCO, vendor comparison, truck rolls) — explanations should be brief and jargon-free
+
+Tools & resources
+
+Smart email platform with merge-tag personalization and deliverability monitoring (specific platform not named)
+Spintax formatting used in irrigation campaigns
+CSV-based campaign tracking
+Separate sending domains per vertical (linkforirrigation.com for irrigation)

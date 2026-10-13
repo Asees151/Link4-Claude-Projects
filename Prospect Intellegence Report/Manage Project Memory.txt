@@ -1,0 +1,45 @@
+Purpose & context
+
+Asees works in sales at Link4 Corporation (Anaheim, California), which sells irrigation and greenhouse control products including a flagship product called HydroRoot. The primary focus within these conversations is building prospect intelligence packages targeting growers, nurseries, and agricultural operations as end-user/grower accounts in the Irrigation/HydroRoot vertical.
+
+Team structure:
+
+Yen – email outreach
+Arishba – LinkedIn and materials prep
+Freelance/John – cold calls
+Drew and Dustin – walkthroughs and warm calls
+Asees – Zoho CRM management
+
+Key working preferences:
+
+Asees prefers clarifying questions to be asked before work runs, not during
+Unattributed or unverified information should not be filled in without flagging
+When responses are ambiguous, Claude should make a reasonable call and proceed rather than loop back repeatedly with more questions
+
+Current state
+
+Two prospect intelligence packages have been completed:
+
+Gritt's Farm (Buffalo, West Virginia) – Irrigation/HydroRoot vertical. Buying intent scored Medium-Strong. Recommended strategy: bottom-up cold call starting with Brad Gritt (GM), escalating to owner Bob Gritt for capital decisions. LinkedIn and in-person rated low given geography; mailed demo unit identified as the physical escalation path. A related business (Gritt's Midway Greenhouse) was identified and kept separate to avoid conflation.
+T-Y Nursery, Inc. (Torrance, CA) – Large family-owned wholesale container nursery across 800+ acres and multiple Southern California sites. Recommended entry point: Tomoharu Iwo (Production/IT Manager). Key sales hooks: California irrigation/nitrogen management regulatory requirements and a "Water Wise" brand-vs-reality gap. Link4's geographic proximity to T-Y sites flagged as a competitive advantage for in-person engagement. Contact emails treated as pattern-based and unverified.
+
+Key learnings & principles
+
+JavaScript-rendered sites (e.g., Square Online platforms) cannot be reliably fetched directly; web search targeting specific operational details is more productive
+The most information-dense sources for agricultural prospects have been lender/credit customer features, regional tourism/chamber profiles, trade publications (Issuu), and ZoomInfo for address/tech stack confirmation
+Revenue and headcount data for private ag businesses is often conflicting or unavailable and should be treated as unknown rather than asserted
+File presence and byte-level consistency should be verified via ls -la before assuming prior session work is complete — compaction summaries alone are not reliable
+
+Approach & patterns
+
+Research workflow: Multi-source web research (search + fetch) → identify key contacts and operational details → score buying intent → build deliverables
+Standard deliverable set (per the consolidated skill): Strategic Outreach Flowchart, Intelligence Report, Conversation & Objection Guide, and Zoho Upload Pack (plain-text Zoho note)
+Contact strategy pattern: Bottom-up entry (operational/production managers first), escalate to owners for capital decisions; channel mix determined by geography and LinkedIn presence
+Validation: All DOCX files validated via python /mnt/skills/public/docx/scripts/office/validate.py [filename].docx from /home/claude before delivery
+
+Tools & resources
+
+Zoho CRM – Asees manages prospect records here; Zoho Upload Pack is a standard deliverable
+DOCX generation: docx npm library; shared helpers module at /home/claude/helpers.js (navy/teal palette, US-Letter page properties); output written to /home/claude/ and synced to /mnt/user-data/outputs/
+Governing skill file: /mnt/skills/user/prospect-intelligence-consolidated/SKILL.md; public docx skill at /mnt/skills/public/docx/SKILL.md
+Research sources: Web search + web fetch; high-value source types include ag lender customer features, chamber/tourism profiles, trade magazines, ZoomInfo

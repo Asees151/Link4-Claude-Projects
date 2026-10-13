@@ -1,0 +1,287 @@
+name: prospect-intelligence-consolidated description: Generate a consolidated prospect intelligence report across multiple companies for Link4 Corporation. Researches each prospect, scores buying intent, identifies pain points, maps decision makers, assesses reachability per channel (cold call, email, LinkedIn, in-person), provides talking points per contact including gatekeeper strategies, defines conversion goals per channel, and ranks ALL contacts across ALL prospects into a single prioritized outreach sequence. Outputs two deliverables — a Strategic Outreach Flowchart (PDF, Step 1-5 visual format) and a detailed Intelligence Report (DOCX) with reachability and approach guidance. Covers all 5 Link4 verticals (OEM, Modbus, Irrigation, Electrical, Greenhouse). Does NOT include full outreach scripts — use a separate outreach-playbook skill for those. Use this skill whenever Asees asks for a prospect intelligence report, prospect research, who to reach out to first, consolidated outreach priorities, or anything related to researching companies and ranking contacts for outreach.
+Consolidated Prospect Intelligence Report Skill
+Overview
+
+This skill generates a consolidated prospect intelligence report answering three questions:
+
+"Who do I reach out to first, second, third?" (priority)
+"Who can I actually get on the phone / get a reply from?" (reachability)
+"What do I say, what do I avoid, and what's the goal?" (approach)
+Outputs
+
+3 deliverables:
+
+Strategic Outreach Flowchart (DOCX) — Step 1→5 visual walkthrough. Step 1: The Company. Step 2: Which Link4 Product Fits. Step 3: Pain Points & Opportunity. Step 4: Who We Contact & How (with reachability + talking points). Step 5: Connection Path & Outreach Sequence. Contains critical questions per contact (3 per person max in this doc).
+Detailed Intelligence Report (DOCX) — Full analysis per company with all sections including reachability, approach guidance, and connection path.
+Conversation & Objection Guide (DOCX) — Separate document with ALL questions per contact ranked by channel (Cold Call / Walkthrough-Sales Meeting / Email), objections per contact with responses, and a channel priority ranking summary. Questions must be tied to each contact's specific position and responsibilities.
+
+BOUNDARY: The Conversation Guide provides questions and objection handling. Full email scripts, LinkedIn message scripts, and cold call scripts belong in a separate outreach-playbook skill.
+
+Workflow
+STEP 0: COLLECT INPUTS
+
+Confirm: companies, verticals (OEM/Modbus/Irrigation/Electrical/Greenhouse), End User vs Distributor, any known context. Do NOT assume.
+
+STEP 1: RESEARCH EACH COMPANY
+
+1a. Company Foundation — web_search + web_fetch: website, About, Products, LinkedIn, news 1b. Ownership & Financial — PE ownership, acquisitions, funding, revenue estimates 1c. Technology & Products — current systems, protocols, connected vs not 1d. Competitors — who they compete with, whether competitors offer what Link4 does 1e. Decision Makers — names, titles, tenure, LinkedIn, emails, phones (use Clay if connected) 1f. Timing Signals — hiring, expansion, leadership changes, trade shows 1g. Trade Shows & Associations (NEW) — check membership in industry groups (e.g., CANGC, AmericanHort, CSIA, AHR Expo). Association membership = trade show attendance = potential warm in-person meeting channel. Also check if they exhibit at relevant shows. 1h. Complete Contact Mapping (NEW) — beyond decision makers, identify: Purchasing/Finance contacts (PROCESS OWNERS who handle vendor onboarding), Gatekeepers (receptionists, assistants who answer phones), Operational staff who deal with the pain point daily (yard managers, field engineers, etc.)
+
+STEP 2: ANALYZE & SCORE EACH COMPANY
+
+2a. Company Profile Table — every field must cite its source 2b. Vertical Fit Assessment — why this vertical, distributor vs end user 2c. Buying Intent Score — using the scoring table (see below) 2d. Pain Points — 3-5 per company, each with: Pain Statement, Evidence, Evidence Type (✅/💡/❓), Link4 Solution, Impact Level, Discovery Question 2e. Competitor Analysis — products, IoT capability, gaps Link4 exploits 2f. Technology Stack — current systems, integration points 2g. Risk Assessment — deal breakers, headwinds, mitigations, overall level 2h. Timing Urgency — 1-5 scale with reasoning
+
+2i. Reference Customer Positioning (NEW) For each prospect, determine how to position Link4's existing customer base:
+
+If Link4 has customers in the SAME industry → lead with those references
+If Link4 has customers in ADJACENT industries → position as "we work with commercial growers/manufacturers/integrators running similar operations" (this is honest and builds credibility)
+If the prospect would be Link4's FIRST in their specific niche → position as "first partner" advantage: "preferential pricing, direct engineering attention, co-marketing opportunity"
+
+For Irrigation (HydroRoot) specifically: Link4's greenhouse customers ARE commercial growers. When talking to nurseries, say "we work with commercial growers" — this is accurate. Greenhouses and nurseries overlap heavily on irrigation/water/zone management. Do NOT claim nursery-specific experience if none exists — say "growers running similar setups."
+
+Buying Intent Scoring Table:
+
+Factor	Points
+PE ownership Year 4+	+5
+New C-level executive (last 6 months)	+5
+Recent acquisition	+4
+Public growth mandate	+4
+Headcount decline >15%	+3
+Hiring for roles Link4 replaces	+4
+Competitor launched connected product	+5
+No IoT/cloud in current products	+4
+Trade show exhibitor	+2
+Customer base matches Link4 buyer profile	+4
+Industry regulation change	+3
+Expansion	+3
+Existing OEM/distribution infrastructure	+3
+Budget indicators	+2
+
+Tiers: Very Strong (35+), Strong (25-34), Medium-Strong (15-24), Medium (8-14), Weak (<8)
+
+STEP 3: DECISION MAKER PROFILES
+
+For each contact, build:
+
+Contact Card: Name, Title, LinkedIn, Email (verified vs pattern — label which), Phone (direct vs main line), Location, Tenure
+
+Strategic Profile:
+
+Why This Person Matters (tied to verified facts)
+What Motivates Them
+Influence Map Position: DECISION MAKER / CHAMPION / TECHNICAL GATEKEEPER / PROCESS OWNER
+Connection Points
+
+Reachability Assessment (per contact, per channel):
+
+Channel	Rating	What to consider
+Cold Call	H/M/L	On-site vs traveling? Operational vs executive? Direct line vs switchboard? Gatekeeper? Industry norms?
+Email	H/M/L	Verified vs pattern? C-suite gets flooded. Operational people may not check email.
+LinkedIn	H/M/L	Active profile? Posts? Ag/trades/nursery people are usually NOT on LinkedIn.
+In-Person	H/M/L	NEW. Is their site near Link4 (Anaheim)? Will-call or open facility? Can you show up with a physical unit? Ag/nursery people trust what they can see and touch.
+
+Best Channel: Single most effective channel with reasoning.
+
+LinkedIn ROI Check (NEW): If LinkedIn reachability is LOW or NONE for all contacts at a company, explicitly recommend reallocating LinkedIn effort to a higher-value activity (e.g., researching their plant availability lists, finding trade show attendance, or preparing a physical leave-behind for an in-person visit).
+
+Gatekeeper Strategy (NEW): If the main phone line has a receptionist/gatekeeper:
+
+Who is the gatekeeper? Name if known from staff page.
+Suggested opener: Frame the call as a question, not a pitch. "Hi, I'm trying to reach [Name] — we work with nurseries on water management and I had a question about your irrigation setup. Is he/she available?"
+If blocked: "No problem — could I leave a brief message? Or is there a better time to catch them?"
+Do NOT say: "I'm calling about a product" or "Is the owner available?" — these trigger vendor-screening reflexes.
+
+Talking Points (4 elements per contact):
+
+Lead With: The one fact/angle most relevant to THIS person. Must reference a verified fact about their company. Frame as question or observation.
+Do NOT Say: What would turn them off. Industry-specific mistakes to avoid.
+If They Push Back: 2-3 likely objections with one-line responses (acknowledge → don't argue → redirect).
+Question That Gets Them Talking: One open-ended question to get them sharing about current setup/pain.
+STEP 3.5: CONVERSION GOALS & CONNECTION PATH (NEW)
+
+Conversion Goals Per Channel:
+
+Every channel has a specific, defined "win":
+
+Channel	Conversion Goal	What Success Looks Like
+Cold Call	Book a "walkthrough" (positioned as walkthrough, actually discovery) with the technical sales team (Drew/Dustin) on Zoom	Caller gets a confirmed date/time. Sends calendar invite before hanging up.
+Email	Get a reply — any reply	Prospect responds. Then pivot to booking the walkthrough with sales team.
+LinkedIn	Get engagement (accept + respond to message)	Then pivot to email or phone to book walkthrough.
+In-Person	Leave a physical unit or one-pager, get a business card or verbal agreement to follow up	Opens the door for a scheduled walkthrough.
+
+IMPORTANT — "Walkthrough" framing: The first meeting is positioned to the prospect as a "walkthrough" — casual, low-pressure, "let me show you how it works and ask about your setup." Internally, this IS the discovery call. The sales team (Drew/Dustin) runs it. Yen joins only if it's a CEO-level conversation or if it would add credibility. Do NOT call it a "discovery call" or "demo" to the prospect — "walkthrough" feels collaborative, not salesy.
+
+Recommended Connection Path:
+
+RECOMMENDED CONNECTION PATH
+
+1. [Channel] → [Contact] — [Why start here]
+2. [Channel] → [Contact] — [Why second]
+3. [Channel] → [Contact] — [Why third]
+
+STRATEGY: [Top-Down / Bottom-Up / Simultaneous]
+
+IF NO RESPONSE FROM STEP 1: → [Fallback]
+IF STEP 2 ENGAGES FIRST: → [Pivot]
+IN-PERSON ESCALATION (if applicable): → [When and how to show up physically]
+STEP 4: CROSS-PROSPECT PRIORITY RANKING
+
+Rank ALL contacts across ALL companies:
+
+Formula:
+
+SCORE = Buying Intent × Timing Multiplier × Influence Weight × Risk Discount
+
+Table format:
+
+# | NAME | TITLE | COMPANY | SCORE | BEST CHANNEL | CONVERSION GOAL | WHY
+STEP 5: VERIFIED FACTS vs ASSUMPTIONS
+
+Three tables: Verified Facts, Assumptions (with Risk If Wrong), Critical Unknowns (with How to Find Out).
+
+OUTPUT FORMATS
+DOCX 1 — Strategic Outreach Flowchart
+
+Step 1→5 walkthrough document:
+
+Step 1: The Company (profile table, key facts, industry connections)
+Step 2: Which Link4 Product Fits & Why (product explanation, fit factors, reference positioning)
+Step 3: Pain Points & Why Now (5 pain points in briefing format + buying intent summary — only verified signals, no "missing signals")
+Step 4: Who We Contact & How (contact cards + reachability tables + approach per contact + gatekeeper strategy + critical questions: max 3 per contact)
+Step 5: Connection Path & Outreach Sequence (day-by-day table + response logic + in-person option + conversion goals)
+
+Generate with docx-js. Read /mnt/skills/public/docx/SKILL.md.
+
+DOCX 2 — Detailed Intelligence Report
+
+Professional Word document with all sections:
+
+EXECUTIVE SUMMARY
+SECTION 1: CROSS-PROSPECT PRIORITY RANKING
+SECTION 2: [COMPANY] — [VERTICAL]
+  2.1 Company Overview
+  2.2 Vertical Fit + Reference Positioning
+  2.3 Buying Intent Analysis
+  2.4 Pain Points (5, briefing format)
+  2.5 Competitor Landscape
+  2.6 Technology Stack
+  2.7 Risk Assessment
+  2.8 Timing Urgency
+  2.9 Decision Maker Profiles (with reachability + approach + gatekeeper)
+  2.10 Conversion Goals & Connection Path
+  2.11 Key Questions (per contact, per channel)
+  2.12 Verified Facts vs Assumptions
+APPENDIX: SOURCES
+
+Generate with docx-js. Read /mnt/skills/public/docx/SKILL.md.
+
+DOCX 3 — Conversation & Objection Guide
+
+Separate document — the team's conversation playbook. NOT part of the intelligence report. Structure per contact:
+
+[CONTACT NAME] — [TITLE]
+  Role summary (one line: what they do, what they care about)
+  Your angle (one line: how to frame the conversation)
+
+  COLD CALL QUESTIONS (1-2 questions — you have 60 seconds to earn 5 minutes)
+    Question | What It Reveals
+
+  WALKTHROUGH / SALES MEETING QUESTIONS (3-5 questions — deeper, 20-30 min call)
+    Question | What It Reveals
+
+  EMAIL HOOKS (2-3 angles — not full emails, just hooks/angles for the email sender)
+    Hook | Goal
+
+  OBJECTIONS (3-6 per contact)
+    They Say | You Say
+
+[Repeat per contact]
+
+CHANNEL PRIORITY RANKING
+  Cold Call: best question per contact
+  Walkthrough: priority question sequence per contact
+  Email: best hooks per contact
+
+GENERAL RULES
+  (Mirror language, 70/30 listen ratio, book next step, etc.)
+
+Question rules for this document:
+
+Every question MUST be tied to the contact's specific position and responsibilities
+CEO gets capital/ROI/oversight questions
+Operations/water person gets daily-reality/systems/monitoring questions
+Technical person gets integration/compatibility questions
+Sales person gets revenue/customer-demand questions
+No generic questions that could apply to anyone
+No nonsense questions — every question must reveal something that helps close the deal
+Questions should make the contact feel like you understand their world
+
+Objection rules:
+
+Every objection must come from the contact's specific position (CEO worries about cost/risk, operations worries about disruption/complexity)
+Response format: Acknowledge → Redirect → Never argue
+Include the most likely pushback based on company research (e.g., family business = "we've been fine for X years")
+
+Generate with docx-js. Read /mnt/skills/public/docx/SKILL.md.
+
+Link4 Vertical Reference
+OEM — Pearl Controller + Cloud (White-Label)
+
+Target: Manufacturers $10M-$100M. Key value: Cloud in 90 days. Decision makers: CEO, VP Eng, CTO.
+
+Modbus — I/O Modules (Distribution or End User)
+
+Target: BAS distributors or system integrators. Key value: Auto-discovery, no register mapping. US support.
+
+Irrigation — HydroRoot Controllers
+
+Target: Commercial growers, nurseries, distributors. Key value: 20-30% water savings. 10-min install. Remote monitoring. Reference positioning: "We work with commercial growers running similar operations under greenhouse environments."
+
+Electrical — Link4 Electrical
+
+Target: Commercial/industrial within 100mi of Anaheim. Key value: 10-min install. Title 24 compliant.
+
+Greenhouse — Environmental Controls
+
+Target: 5+ acres under glass/plastic. Key value: One integrated platform. 20+ years expertise.
+
+Team Structure
+Vertical	Email	LinkedIn	Cold Calls	Warm Calls	Walkthrough
+Greenhouse (EU)	Yen	Naghmi	Freelance	Dustin	Drew/Dustin
+Greenhouse (Dist)	Bob	Naghmi	—	—	Drew/Dustin
+Modbus (EU)	Yen	Nashra	Freelance/Dustin	Dustin	Drew/Dustin
+Modbus (Dist)	Bob	Nashra	—	—	Drew/Dustin
+OEM	Yen	Nashra	Freelance	Dustin	Drew/Dustin
+Irrigation (EU)	Yen	Arishba	Freelance/John	Drew/Dustin	Drew/Dustin
+Irrigation (Dist)	Yen	Arishba	—	Drew/Dustin	Drew/Dustin
+Electrical	Yen	—	—	Dustin	Dustin
+Execution Steps
+Confirm inputs — companies, verticals, distributor vs end user
+Research — Step 1 for each company (web_search + web_fetch extensively)
+Analyze & score — Step 2 for each company
+Contact profiles + reachability + approach — Step 3 for all decision makers
+Connection paths — Step 3.5 per company
+Priority ranking — Step 4 across all companies (includes best channel)
+Evidence summary — Step 5
+Generate DOCX 1 — Strategic Outreach Flowchart (read /mnt/skills/public/docx/SKILL.md)
+Generate DOCX 2 — Intelligence Report
+Generate DOCX 3 — Conversation & Objection Guide (questions per contact per channel + objections)
+Move all files to /mnt/user-data/outputs and present
+Quality Checks
+ Every fact has source citation
+ Every assumption labeled with Risk If Wrong
+ Every contact has reachability ratings (call, email, LinkedIn, in-person)
+ Every contact has approach guidance (lead with, pushback handling, opening question)
+ Gatekeeper strategy documented when main line has receptionist
+ Conversion goal defined per channel (walkthrough booking = win)
+ Reference customer positioning documented (same industry / adjacent / first partner)
+ Connection path includes in-person option where geography allows
+ LinkedIn ROI checked — reallocate if all contacts are LOW/NONE
+ Trade show / association membership researched (not asked — researched)
+ Only verified contacts included — no unverified contacts in the report
+ 5 pain points per company in briefing format
+ Only positive signals — no "missing signals" section
+ Conversation Guide has questions ranked by channel per contact
+ Conversation Guide has objections tied to each contact's specific role
+ Every question passes the test: "Does this reveal something that helps close the deal?"
+ No nonsense questions — every question earns its place
+ All 3 DOCX files generated and in /mnt/user-data/outputs

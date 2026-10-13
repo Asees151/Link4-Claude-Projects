@@ -1,0 +1,47 @@
+Purpose & context
+
+Asees works at Link4 Corporation running Meta Ads lead generation campaigns for two distinct products: Modbus (industrial automation modules) and HydroRoot (irrigation technology). The primary goal is maintaining a clean, efficient pipeline from Meta Ads → Google Sheets → Zoho CRM, with Close CRM CSV exports for follow-up. Key colleague: Nashrah, who is assigned all Modbus follow-up tasks in Zoho.
+
+Current state
+
+A recurring lead sync workflow is active and operational. It triggers when Asees types "update", at which point the workflow:
+
+Reads both Google Sheets (Modbus and HydroRoot)
+Identifies new leads via email-first, name-secondary duplicate check against existing Zoho Leads and Contacts
+Creates new Zoho leads with product-appropriate descriptions and notes
+Assigns Nashrah tasks for all Modbus leads (Quote and Lead Magnet categories)
+Outputs Close CRM CSV files for four smart views (empty files skipped)
+
+Sheet details (both set to public viewer access for reliable curl access):
+
+Modbus sheet ID: 1Cxah_JN2OgHrwC8n1LmiOC-kN9mDoI4J5oqSpABTtI8 — two tabs: Quote and Lead Magnet
+HydroRoot sheet ID: 1aObfhEFx0I02bKK-1F7DQQ0TorsH6l92SdtSFdwC4mI — one tab
+
+Key learnings & principles
+
+Workflow rules (confirmed):
+
+Modbus Quote leads → Zoho entry + same-day High Priority Nashrah task:
+Specific module identified: "Send Modbus quote to {Name} — {Company}"
+Vague/unsure response: "Ask for more information for quote — {Name} — {Company}"
+Modbus Lead Magnet leads → Zoho entry + Nashrah task: "Lead Magnet — Send email to {Name} — {Company} (Modbus)" — applies to ALL leads including Mexican leads (ad targeting updated but full coverage maintained)
+HydroRoot leads → Zoho entry with High or Normal classification auto-determined by Claude based on irrigation signals (farm, nursery, greenhouse, irrigation-related company name, or irrigation setup comments described); no tasks assigned
+Four Close CRM CSVs output per run: Modbus Quote, Modbus Lead Magnet, HydroRoot High, HydroRoot Normal — new leads only, all readable fields, empty files skipped
+
+Duplicate & data hygiene rules:
+
+Email = primary dedup key; name = secondary
+Skip rows where lead_status = "Test"
+Skip known spam patterns: leads with "Hollywood / Actor"-type company/title combinations (e.g., Asís Orozco is a confirmed spam entry)
+
+Asees's stated preferences:
+
+Claude should ask clarifying questions before running anything
+Never invent or assume information
+
+Tools & resources
+
+Google Sheets access method: Direct curl export via https://docs.google.com/spreadsheets/d/[ID]/export?format=xlsx (sheets set to public viewer); per-tab CSV via ?format=csv&gid=[tab_gid]; parsed with openpyxl
+File creation: create_file tool handles full base64 strings reliably (avoid bash heredoc multi-chunk writes for base64 — prone to silent failures)
+Google Drive read_file_content: Truncates at first tab for multi-tab workbooks — not suitable for Modbus sheet
+CRMs in use: Zoho CRM (primary), Close CRM (CSV export/smart views)
